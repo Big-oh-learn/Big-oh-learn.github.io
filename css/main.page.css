@@ -1,0 +1,41 @@
+.bo-banner {
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 1px solid #000
+}
+
+.body,
+.fsl {
+    font-size: calc(1.275rem + .3vw)
+}
+
+.icon-bar img {
+    max-width: calc(100vw - 40px);
+    background-color: #fff
+}
+
+.icon-bar {
+    width: auto;
+    border-radius: 30px
+}
+
+.body {
+    margin-top: 50px;
+    padding: 20px
+}
+
+.card {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 15px
+}
+
+body {
+    background-image: url(/assets/banner.jpg);
+    background-size: 10vw
+}
+
+.footer {
+    margin: 0 !important
+}

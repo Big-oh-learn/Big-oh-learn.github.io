@@ -1,0 +1,56 @@
+.navbar{
+    border-bottom: 1px dashed #000;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.751);
+    backdrop-filter: blur(5px);
+    z-index: 10000000;
+}
+.bo-banner{
+    width:100vw;
+    margin: 0% !important;
+    margin-bottom: 30px;
+}
+input{
+    background-color: transparent !important;
+}
+.larger-font{
+    font-size: larger;
+}
+.theme-grad{
+    background: url(/assets/banner.jpg) center;
+    background-size: 180vh;
+}
+*::selection{
+    background-color: rgba(0, 0, 0, 0.463);
+    color: white;
+    border: 1px solid red;
+}
+*::-webkit-scrollbar{
+    width: 0;
+}
+.visit-link{
+    border-bottom: 1px dashed #000;
+    text-decoration: none;
+    font-size: larger;
+}
+.footer,.navbar{
+    transition: 0.5s;
+}
+.footer{
+    position: fixed;
+    margin: 0 !important;
+    bottom:0;
+    z-index: 10000000;
+}
+footer{
+    backdrop-filter: blur(5px);
+    z-index: 10000000;
+}
+body{
+    padding-bottom: 150px;
+}
+.fsl {
+    font-size: medium;
+}
