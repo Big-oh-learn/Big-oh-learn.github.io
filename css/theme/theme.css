@@ -1,56 +1,124 @@
-.navbar{
+.navbar {
     border-bottom: 1px dashed #000;
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.751);
+    background-color: rgba(255, 255, 255, .751);
     backdrop-filter: blur(5px);
-    z-index: 10000000;
+    z-index: 10000000
 }
-.bo-banner{
-    width:100vw;
-    margin: 0% !important;
-    margin-bottom: 30px;
+
+.bo-banner {
+    width: 100vw;
+    margin: 0 !important;
+    margin-bottom: 30px
 }
-input{
-    background-color: transparent !important;
+
+input,textarea {
+    background-color: transparent !important
 }
-.larger-font{
-    font-size: larger;
+
+.larger-font {
+    font-size: larger
 }
-.theme-grad{
+
+.theme-grad {
     background: url(/assets/banner.jpg) center;
-    background-size: 180vh;
+    background-size: 180vh
 }
-*::selection{
-    background-color: rgba(0, 0, 0, 0.463);
-    color: white;
-    border: 1px solid red;
+
+::selection {
+    background-color: rgba(0, 0, 0, .463);
+    color: #fff;
+    border: 1px solid red
 }
-*::-webkit-scrollbar{
-    width: 0;
+
+::-webkit-scrollbar {
+    width: 0
 }
-.visit-link{
+
+.visit-link {
     border-bottom: 1px dashed #000;
     text-decoration: none;
-    font-size: larger;
+    font-size: larger
 }
-.footer,.navbar{
-    transition: 0.5s;
+
+.footer,
+.navbar {
+    transition: .5s
 }
-.footer{
+
+.footer {
     position: fixed;
     margin: 0 !important;
-    bottom:0;
-    z-index: 10000000;
+    bottom: 0;
+    z-index: 10000000
 }
-footer{
+
+footer {
     backdrop-filter: blur(5px);
-    z-index: 10000000;
+    z-index: 10000000
 }
-body{
-    padding-bottom: 150px;
+
+body {
+    padding-bottom: 150px
 }
+
 .fsl {
-    font-size: medium;
+    font-size: medium
+}
+
+.share-container {
+    position: fixed;
+    top: 80px;
+    left: calc(25vw + 10px);
+    width: calc(50vw - 20px);
+    height: auto;
+    z-index: 100000000000000000;
+    background-color: rgba(255, 255, 255, .751);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px dashed #000;
+    border-radius:5px;
+}
+@media only screen and (max-width:500px) {
+    .share-container{
+        left: 5px;
+        width: calc(100vw - 10px);
+    }  
+}
+
+.share-container .url-cpy , .share-header{
+    display: flex;
+}
+
+.share-container .url-cpy{
+    margin-top: 10px;
+}
+
+.ellipse{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.url-cpy .button{
+    margin-top: auto;
+}
+
+.share-container textarea{
+    max-height: 120px;
+}
+
+.share-body .container .col{
+    margin-top: 10px !important;
+}
+
+.share-body .col{
+    display: flex;
+}
+
+.share-body .col button{
+    margin: auto;
 }

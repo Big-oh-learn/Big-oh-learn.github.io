@@ -4,7 +4,7 @@ fetch("/blogs/map/blogs.json").then(res=>res.json()).then(json=>{
     json_load.detail={search:(q)=>{
              let filtered_blogs = [];
              for(let blog of json){
-                 let search_from = [blog.name,blog.description,blog.url];
+                 let search_from = [blog.name,blog.description,blog.url,blog.author];
                  for(let data of search_from){
                     q.split(",").forEach(q=>{
                      if(data.toLowerCase().includes(q.toLowerCase())){
