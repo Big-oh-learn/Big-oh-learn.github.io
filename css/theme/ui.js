@@ -59,7 +59,7 @@ window.addEventListener("load",ev=>{
       <div class="share-body">
         <b>message</b> : ${msg}
       </div>`
-      document.body.append(div);
+      document.body.append(divOfmsg);
     }
 });
 var closeMessage = () =>{
