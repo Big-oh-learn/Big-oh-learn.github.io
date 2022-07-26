@@ -39,11 +39,34 @@ window.addEventListener("keyup",ev=>{
         }
     }
 })
+var divOfmsg;
 window.addEventListener("load",ev=>{
     if(window.innerHeight<1000){
         bools.isMobile=true;
     }
+    params=new URLSearchParams(window.location.search),
+    msg=params.get("message");
+    if(msg&&msg!=""){
+      divOfmsg = document.createElement("div");
+      divOfmsg.classList.add("share-container");
+      divOfmsg.innerHTML+=`<div class="share-header">
+        <h1 class="ellipse">Shared message
+        </h1>
+        <h1  style="margin-left:auto;">
+        <a class="btn btn-outline-danger" onclick="closeMessage()"><i class="bi bi-arrow-left"></i></a>
+        </h1>
+      </div>
+      <div class="share-body">
+        <b>message</b> : ${msg}
+      </div>`
+      document.body.append(div);
+    }
 });
+var closeMessage = () =>{
+  if(divOfmsg){
+    divOfmsg.remove();
+  }
+}
 var share = ({url,title,text,files,message}) =>{
     let template = `
     <div class="share-header">

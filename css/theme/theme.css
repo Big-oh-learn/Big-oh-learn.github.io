@@ -28,9 +28,8 @@ input,textarea {
 }
 
 ::selection {
-    background-color: rgba(0, 0, 0, .463);
+    background-color: rgb(255, 0, 0);
     color: #fff;
-    border: 1px solid red
 }
 
 ::-webkit-scrollbar {
@@ -68,11 +67,11 @@ body {
     font-size: medium
 }
 
-.share-container {
+.share-container ,.message{
     position: fixed;
     top: 80px;
-    left: calc(25vw + 10px);
-    width: calc(50vw - 20px);
+    left: calc(50vw - 200px);
+    width: 400px;
     height: auto;
     z-index: 100000000000000000;
     background-color: rgba(255, 255, 255, .751);
@@ -84,7 +83,7 @@ body {
     border-radius:5px;
 }
 @media only screen and (max-width:500px) {
-    .share-container{
+    .share-container ,.message{
         left: 5px;
         width: calc(100vw - 10px);
     }  
@@ -117,6 +116,8 @@ body {
 
 .share-body .col{
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .share-body .col button{
