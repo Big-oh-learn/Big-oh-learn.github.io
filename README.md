@@ -9,5 +9,5 @@ The Dsa series of blogs is not yet started but it'll start very soon
 We're Excited to announce that we're going to create opportunities to contribute in projects made with electron, svelte and many of the best techs
 
 <p align="right">
-<img src="/assets/index.logo.png">
+<img height="30px" src="/assets/index.logo.png">
 </p>
